@@ -1,5 +1,48 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+    "name": "keel",
+    "version": "0.0.0",
+    "description": "Keel",
+    "main": "src/index.js",
+    "directories": {
+        "doc": "docs",
+        "test": "test"
+    },
+    "scripts": {
+        "lint": "node node_modules/gulp/bin/gulp lint",
+        "build": "node node_modules/gulp/bin/gulp build",
+        "test": "node node_modules/gulp/bin/gulp test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://gitserver/var/keel/git/keel.git"
+    },
+    "keywords": ["keel"],
+    "author": "gsmlg",
+    "license": "BSD",
+    "spm": {
+        "main": "src/index.js",
+        "dependencies": {},
+        "devDependencies": {},
+        "engines": {
+            "seajs": "2.3.0"
+        }
+    },
+    "devDependencies": {
+        "colorful": "^2.1.0",
+        "csslint": "^0.10.0",
+        "gulp": "^3.8.5",
+        "gulp-csslint": "^0.1.4",
+        "gulp-jshint": "^1.6.4",
+        "jshint": "^2.5.1",
+        "jshint-stylish": "^0.2.0",
+        "karma": "^0.12.16",
+        "karma-growl-reporter": "^0.1.1",
+        "karma-jasmine": "^0.1.5",
+        "karma-mocha-reporter": "^0.2.6",
+        "karma-phantomjs-launcher": "^0.1.4",
+        "karma-seajs": "^0.1.1",
+        "seajs": "^2.3.0",
+        "spm": "^3.0.3",
+        "underscore": "^1.6.0"
+    }
 }
