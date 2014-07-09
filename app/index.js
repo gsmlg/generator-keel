@@ -25,7 +25,7 @@ var KeelGenerator = yeoman.generators.Base.extend({
             this.log(answers.name);
             done();
         }.bind(this));
-    }
+    },
     app: function() {
         this.mkdir('vendor');
         this.mkdir('vendor/hooks');
