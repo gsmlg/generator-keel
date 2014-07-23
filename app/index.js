@@ -35,7 +35,7 @@ var KeelGenerator = yeoman.generators.Base.extend({
         this.mkdir('docs');
         this.mkdir('tasks');
         this.mkdir('test');
-        this.template('_package.json')
+        this.template('package.json');
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
         this.copy('_gulpfile.js', 'gulpfile.js');
@@ -49,6 +49,7 @@ var KeelGenerator = yeoman.generators.Base.extend({
     projectfiles: function() {
         this.copy('editorconfig', '.editorconfig');
         this.copy('jshintrc', '.jshintrc');
+        this.copy('jsbeautifyrc', '.jsbeautifyrc');
         this.copy('csslintrc', '.csslintrc');
         this.copy('gitignore', '.gitignore');
         this.copy('gitattributes', '.gitattributes');

@@ -2,16 +2,16 @@
 module.exports = function(gulp) {
     var path = require('path'),
         fs = require('fs'),
-        util = require("util"),
+        util = require('util'),
         build = require('keel-build-tool').build,
-        UglifyJS = require("uglify-js"),
+        UglifyJS = require('uglify-js'),
         join = path.join,
         _ = require('underscore'),
         root = join(__dirname, '..');
 
     var pkg = require(join(root, 'package.json'));
 
-    spm = pkg.spm
+    var spm = pkg.spm;
 
     var buildOpt = {
         ignore: _.keys(spm.dependencies),

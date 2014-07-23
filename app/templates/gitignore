@@ -1,3 +1,4 @@
+lib-cov
 *.seed
 *.log
 *.csv
@@ -7,6 +8,10 @@
 *.gz
 .idea
 \#*\#
+pids
+logs
+results
+npm-debug.log
 /node_modules
 /sea-modules
 /bower_components
