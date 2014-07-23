@@ -50,8 +50,8 @@ var KeelGenerator = yeoman.generators.Base.extend({
         this.copy('editorconfig', '.editorconfig');
         this.copy('jshintrc', '.jshintrc');
         this.copy('csslintrc', '.csslintrc');
-        this.copy('gitignore', '.csslintrc');
-        this.copy('gitattributes', '.csslintrc');
+        this.copy('gitignore', '.gitignore');
+        this.copy('gitattributes', '.gitattributes');
     }
 });
 module.exports = KeelGenerator;
