@@ -10,6 +10,7 @@ module.exports = function(gulp) {
         files: [
             {pattern: 'vendor/**/*.js', included: false, watched: false},
             {pattern: 'src/**/*.js', included: false},
+            {pattern: 'test/**/*.json', included: false},
             {pattern: 'test/**/*spec.js', included: false},
             'test/test-main.js'
         ],
@@ -43,16 +44,17 @@ module.exports = function(gulp) {
         });
     });
 
-    gulp.task('test:debug', function(done){
+    gulp.task('test:serve', function(done){
         var conf;
         conf = _.extend({}, karmaCommonConf, {
-            logLevel: 'debug',
-            singleRun: true
+            autoWatch: true,
+            singleRun: false
         });
 
         karma.start(conf, function() {
             done();
             process.exit();
         });
-    })
+    });
+
 };

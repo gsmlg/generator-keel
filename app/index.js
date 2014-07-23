@@ -22,6 +22,7 @@ var KeelGenerator = yeoman.generators.Base.extend({
             message: 'Your project name',
             default: this.appname // Default to current folder name
         }, function(answers) {
+            this.appName = answers.name;
             this.log(answers.name);
             done();
         }.bind(this));
@@ -34,13 +35,16 @@ var KeelGenerator = yeoman.generators.Base.extend({
         this.mkdir('docs');
         this.mkdir('tasks');
         this.mkdir('test');
+        this.template('_package.json')
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
         this.copy('_gulpfile.js', 'gulpfile.js');
         this.copy('_test/_test-main.js', 'test/test-main.js');
-        this.copy('_tasks/_build.gulp.js', 'tasks/build.gulp.js');
-        this.copy('_tasks/_lint.gulp.js', 'tasks/lint.gulp.js');
-        this.copy('_tasks/_test.gulp.js', 'tasks/test.gulp.js');
+        this.copy('_tasks/build.gulp.js', 'tasks/build.gulp.js');
+        this.copy('_tasks/lint.gulp.js', 'tasks/lint.gulp.js');
+        this.copy('_tasks/test.gulp.js', 'tasks/test.gulp.js');
+        this.copy('_tasks/beauty.gulp.js', 'tasks/beauty.gulp.js');
+        this.copy('_tasks/webserver.gulp.js', 'tasks/webserver.gulp.js');
     },
     projectfiles: function() {
         this.copy('editorconfig', '.editorconfig');
