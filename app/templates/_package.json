@@ -49,17 +49,17 @@
     "js-beautify": "^1.5.1",
     "jshint": "^2.5.1",
     "jshint-stylish": "^0.2.0",
-    "karma": "^0.12.16",
+    "karma": "~0.12.0",
     "karma-growl-reporter": "^0.1.1",
-    "karma-jasmine": "^0.2.0",
+    "karma-jasmine": "~0.1.0",
     "karma-mocha-reporter": "^0.2.6",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-seajs": "^0.1.1",
     "keel-build-tool": "^0.1.1",
     "rcloader": "^0.1.2",
-    "seajs": "^2.3.0",
-    "spm": "^3.0.3",
-    "uglify-js": "^2.4.15",
-    "underscore": "^1.6.0"
+    "seajs": "~2.3.0",
+    "spm": "~3.0.0",
+    "uglify-js": "~2.0.0",
+    "underscore": "~1.6.0"
   }
 }
