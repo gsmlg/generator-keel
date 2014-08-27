@@ -6,7 +6,7 @@
     "main": "app/index.js",
     "repository": "ssh://gitserver/var/keel/git/keel-generator",
     "author": {
-        "name": "zdns",
+        "name": "zdns web"
     },
     "engines": {
         "node": ">=0.10.0"
