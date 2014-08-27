@@ -35,7 +35,7 @@ var KeelGenerator = yeoman.generators.Base.extend({
         this.mkdir('docs');
         this.mkdir('tasks');
         this.mkdir('test');
-        this.template('package.json');
+        this.template('_package.json');
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
         this.copy('_gulpfile.js', 'gulpfile.js');

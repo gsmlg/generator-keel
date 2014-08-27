@@ -58,8 +58,8 @@
     "keel-build-tool": "^0.1.1",
     "rcloader": "^0.1.2",
     "seajs": "~2.3.0",
-    "spm": "~3.0.0",
-    "uglify-js": "~2.0.0",
-    "underscore": "~1.6.0"
+    "spm": "^3.0.0",
+    "uglify-js": "^2.0.0",
+    "underscore": "^1.6.0"
   }
 }
